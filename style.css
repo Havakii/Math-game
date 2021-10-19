@@ -22,7 +22,7 @@
 }
 
 #score{
-    height: 50px;
+    height: 40px;
     width: 100px;
     background-color: #EFF291;
     border-radius: 5px;
@@ -36,21 +36,24 @@
 }
 
 .correct{
-    height: 50px;
+    height: 40px;
     width: 100px;
     background-color: #ABD94A;
+    box-shadow: 0px 3px 0px #7EA8BB;
     color: white;
     border-radius: 5px;
     margin-right: 90px;
     margin-top: 20px;
     text-align: center;
+    /* display: none; */
        
 }
 
 .fail{
-    height: 50px;
+    height: 40px;
     width: 100px;
     background-color: #FF665A;
+    box-shadow: 0px 3px 0px #7EA8BB;
     color: white;
     border-radius: 5px;
     margin-right: 90px;
@@ -102,7 +105,6 @@
 
 .choice{
     height: 100px;
-    width: 450px;
     display: flex;
     justify-content:space-around;
     margin-left: 50px;
@@ -110,13 +112,13 @@
     
 }
 
-.answer1, .answer2, .answer3, .answer4{
+#answer1 button, #answer2 button, #answer3 button, #answer4 button{
     height: 75px;
     width: 75px;
     background-color: #FFFFFF;
     border-radius: 5px;
     box-shadow: 0px 3px 0px #7EA8BB;
-    margin-top: 10px;    
+    margin-top: 15px;    
 }
 
 p{
@@ -125,93 +127,59 @@ p{
     font-size: 18px;
 }
 
-.answer1 :hover{
+#answer1 button:hover, #answer2 button:hover, #answer3 button:hover, #answer4 button:hover{
     background-color: #EFF291;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.answer2:hover{
-    background-color: #EFF291;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.answer3:hover{
-    background-color: #EFF291;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.answer4 :hover{
-    background-color: #EFF291;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.answer1 :active{
+/* #answer1 :active, #answer2 :active, #answer3 :active,#answer4 :active{
     background-color: teal;
     transition: all 1s ease-out;
     border-radius: 5px;
 
-}
-
-.answer2 :active{
-    background-color: teal;
-    transition: all 1s ease-out;
-    border-radius: 5px;
-}
-
-.answer3 :active{
-    background-color: teal;
-    transition: all 1s ease-out;
-    border-radius: 5px;
-}
-
-.answer4 :active{
-    background-color: teal;
-    transition: all 1s ease-out;
-    border-radius: 5px;
-}
+} */
 
 .bottomelement{
     display: flex;
-    justify-content:flex-end;
+    justify-content:center;
     border-radius: 5px;
  
 }
 
-.start{
+button{
     width: 95px;
     height: 40px;
+    text-decoration: none;
+    border: none;
     background-color: #CEE9F5;
     border-radius: 5px;
     box-shadow: 0px 3px 0px #7EA8BB;
-    margin-right: 60px;  
+    justify-content:center;
+    /* margin-right: 60px;   */
 }
 
-.start :hover{
+#button :hover{
+    background-color:#AE84D9;
     cursor: pointer;
 }
 
-.start p{
-    text-align: center;
-    padding: 10px;
-}
-
-.timer{
-    width: fit-content;
+#timer{
+    /* width: fit-content; */
     height: 40px;
     background-color: #B0E64C;
     border-radius: 5px;
     box-shadow: 0px 3px 0px #7EA8BB;
-    margin-left: 10px;
-    margin-right: 20px;
+    justify-content: end;
+    /* margin-left: 10px;
+    margin-right: 20px; */
+    
 }
 
-.timer p{
+#timer p{
     text-align: left;
     padding: 10px;
+    display: none;
 }
 
 .gameover{
